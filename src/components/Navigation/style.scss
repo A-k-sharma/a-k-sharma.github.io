@@ -30,6 +30,9 @@
 .dark-mode{
   .nav-bar-cont {
     background-color: #18152f;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
   //.ant-drawer-content-wrapper {
   //  .ant-drawer {
@@ -42,6 +45,9 @@
 
 @media only screen and (max-device-width: 425px){
   .nav-bar-cont {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     .menu-bar {
       .barsMenu{
         display: inline-block;
@@ -67,6 +73,9 @@
 
 @media only screen and (max-device-width: 320px){
   .nav-bar-cont {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     .menu-bar {
       .barsMenu{
         display: inline-block;

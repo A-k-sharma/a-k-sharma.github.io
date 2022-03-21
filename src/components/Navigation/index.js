@@ -77,25 +77,41 @@ function NavBar(props) {
                         <span className="icon">
                             <i className="fas fa-home mobile-icon"></i>
                         </span>
-                        <span className="title">Home</span>
+                        <span className="title" onClick={(e)=> {
+                                e.preventDefault();
+                                window.location.replace("/#home")
+                            }}
+                        >Home</span>
                     </div>
                     <div className="menu-item">
                         <span className="icon">
                            <i className="fas fa-solid fa-user-tie"></i>
                         </span>
-                        <span className="title">About Me</span>
+                        <span className="title" onClick={(e)=> {
+                                e.preventDefault();
+                                window.location.replace("/#about")
+                            }}
+                        >About Me</span>
                     </div>
                     <div className="menu-item">
                         <span className="icon">
                             <i className="fas fa-solid fa-network-wired"></i>
                         </span>
-                        <span className="title">Experience</span>
+                        <span className="title" onClick={(e)=> {
+                                e.preventDefault();
+                                window.location.replace("/#experience")
+                            }}
+                        >Experience</span>
                     </div>
                     <div className="menu-item">
                         <span className="icon">
                             <i className="fas fa-solid fa-laptop-code"></i>
                         </span>
-                        <span className="title">Skills</span>
+                        <span className="title" onClick={(e)=> {
+                                e.preventDefault();
+                                window.location.replace("/#skill")
+                            }}
+                        >Skills</span>
                     </div>
                     {/*<div className="menu-item">*/}
                     {/*    <span className="icon">*/}
@@ -113,7 +129,11 @@ function NavBar(props) {
                         <span className="icon">
                             <i className="fas fa-solid fa-phone"></i>
                         </span>
-                        <span className="title">Contact</span>
+                        <span className="title" onClick={(e)=> {
+                                e.preventDefault();
+                                window.location.replace("/#contact")
+                            }}
+                        >Contact</span>
                     </div>
                     <div className="menu-item">
                         <Switch
