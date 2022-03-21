@@ -64,6 +64,7 @@ function NavBar(props) {
                 <Drawer
                     placement="left"
                     closable={false}
+                    className={props.darkMode? "dark-mode" : "light-mode"}
                     onClose={()=>setShowDrawer(prev=>!prev)}
                     visible={showDrawer}
                     width={100}

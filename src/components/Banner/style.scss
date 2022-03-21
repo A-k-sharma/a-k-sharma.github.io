@@ -58,8 +58,8 @@
     background-position: 0px 0px;
   }
 }
-.specification
-{
+
+.specification {
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   letter-spacing: 7px;
@@ -97,6 +97,27 @@
   .clip-text{
     h1{
       background-image: url('../../assets/pink.jpg') !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .banner-cont{
+    text-align: center;
+  }
+  .clip-text{
+    h1{
+      font-size: 64px;
+    }
+  }
+}
+@media only screen and (max-width: 480px){
+  .banner-cont{
+    text-align: center;
+  }
+  .clip-text{
+    h1{
+      font-size: 64px;
     }
   }
 }
