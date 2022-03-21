@@ -1,0 +1,102 @@
+.contact-cont{
+  min-height: 500px;
+}
+.label-header{
+  display: flex;
+  justify-content: end;
+}
+
+.notification-label {
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.ant-input{
+  border-radius: 10px;
+  padding: 10px 15px;
+  min-height: 45px;
+  background-color: #F0EEFD;
+  //box-shadow: 0 14px 28px #F0EEFD, 0 10px 10px #F0EEFD;
+  &:hover{
+    border: none;
+    outline: none;
+    //box-shadow: 0 14px 28px #F0EEFD, 0 10px 10px #F0EEFD;
+  }
+  &:focus{
+    border: none;
+    outline: none;
+    //box-shadow: 0 14px 28px #F0EEFD, 0 10px 10px #F0EEFD;
+  }
+  &:focus-visible {
+    border: none;
+    outline: none;
+    //box-shadow: 0 14px 28px #F0EEFD, 0 10px 10px #F0EEFD;
+  }
+}
+.ant-input:not(:focus) {
+  outline: none;
+  border: none;
+}
+.ant-form-item-control-input-content{
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.ant-form-item-control-input{
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.contact-card{
+  display: flex;
+  align-items: center;
+  //max-width: 100px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  width: 300px;
+  //box-shadow: 0 14px 28px #F0EEFD, 0 10px 10px #F0EEFD;
+  cursor: pointer;
+  transition: 0.4s;
+  .icon{
+    padding: 10px;
+    i{
+      font-size: 24px;
+    }
+  }
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+  }
+}
+
+.ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input, .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:hover{
+  background: #F0EEFD;
+  border-color: #F0EEFD;
+}
+.ant-input-focused{
+  box-shadow: none;
+  border: none;
+}
+.ant-btn-primary{
+  border-color: #ff2175;
+  background: #ff2175;
+}
+
+.dark-mode{
+  .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input, .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input:hover {
+    background: #18152f;
+    border-color: #18152f;
+  }
+  .ant-input {
+    background-color: #342f5a;
+  }
+  .ant-form-item-label > label{
+    color: #FBFBFE;
+  }
+}

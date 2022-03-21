@@ -1,0 +1,49 @@
+.exp-cont{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 500px;
+
+  .experience-card{
+    .passout-year{
+      i{
+        margin-right: 5px;
+      }
+    }
+  }
+
+}
+
+.ant-tabs-top > .ant-tabs-nav::before, .ant-tabs-bottom > .ant-tabs-nav::before, .ant-tabs-top > div > .ant-tabs-nav::before, .ant-tabs-bottom > div > .ant-tabs-nav::before{
+  display: none;
+}
+
+.ant-tabs-nav-wrap{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.ant-tabs{
+  margin-top: 15px;
+  width: 100%;
+
+}
+
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #ff2175;
+}
+.ant-tabs-ink-bar{
+  background: #ff2175;
+}
+
+.dark-mode{
+  .ant-tabs-tab-btn{
+    color: #FBFBFE;
+  }
+  .experience-card{
+    color: #FBFBFE;
+  }
+}

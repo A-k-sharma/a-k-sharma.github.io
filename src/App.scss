@@ -1,0 +1,38 @@
+.App{
+  background-color: #FBFBFE;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  section{
+    margin-bottom: 25px;
+  }
+}
+
+.main-heading {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+  h3{
+    font-size: 24px;
+    font-weight: bolder;
+  }
+}
+.ant-btn-primary{
+  border-radius: 10px!important;
+  &:hover, &:focus{
+    border-color: #ff2175 !important;
+    background: #ff2175 !important;
+  }
+
+}
+.dark-mode{
+  background-color: #18152f;
+  color: #FBFBFE;
+  .main-heading{
+    color: #FBFBFE;
+    h3{
+      color: #FBFBFE;
+    }
+  }
+}

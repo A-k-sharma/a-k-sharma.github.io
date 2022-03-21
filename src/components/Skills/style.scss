@@ -1,0 +1,38 @@
+.skill-cont{
+  height: 600px;
+}
+
+.skill-card{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.card-item{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .title{
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .icon{
+    width: 50px;
+    height: 50px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.dark-mode{
+  .card-item{
+    .title{
+      color: #FBFBFE;
+    }
+  }
+}
