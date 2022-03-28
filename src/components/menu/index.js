@@ -1,56 +1,69 @@
 import React from 'react';
-// import './style.css';
+import './style.scss';
 import {NavLink} from "react-router-dom";
+import {CaretRightOutlined} from "@ant-design/icons"
 
 function Menu(props) {
     return (
-        <div className="navbar-custom">
-            <div className="menu">
-                <div className="header">
-                    <i className="fab fa-earlybirds"></i>
-                </div>
-                <div className="navigation-menu">
-                    <div className="menu-item">
-                        <NavLink exact to={'/'} activeClassName="selected">
-                            <i className="fas fa-home"></i>
-                            <span className="menu-text">Home</span>
-                        </NavLink>
-                    </div>
-
-                    <div className="menu-item">
-                        <NavLink to={'/skill'} activeClassName="selected">
-                            <i className="fab fa-black-tie"></i>
-                            <span className="menu-text">Profile</span>
-                        </NavLink>
-                    </div>
-
-                    <div className="menu-item">
-                        <NavLink to={'/blogs'}>
-                            <i className="fas fa-briefcase"></i>
-                            <span className="menu-text">Work</span>
-                        </NavLink>
-                    </div>
-
-                </div>
-                <div className="footer">
-                    <div className="menu-item">
-                    </div>
-
-                    <div className="menu-item">
-                        <a href="https://instagram.com/mr_ashish___" className="menu-item" style={{"color":"#E26961"}}
-                           target="blank">
-                            <i className="fab fa-instagram"></i>
-                        </a>
-                    </div>
-
-                    <div className="menu-item">
-                        <a href="https://github.com/a-k-sharma" className="menu-item" style={{"color":"#CFCFCF"}}
-                           target="blank">
-                            <i className="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div className="navigation">
+            <ul>
+                <li className="list">
+                    <NavLink exact to={'/'} activeClassName="active" className="menu-item">
+                        <span className="icon">
+                            <i className="fas fa-home mobile-icon"></i>
+                        </span>
+                        <span className="title">Home</span>
+                    </NavLink>
+                </li>
+                <li className="list">
+                    <NavLink exact to={'/about'} activeClassName="active" className="menu-item">
+                        <span className="icon">
+                           <i className="fas fa-solid fa-user-tie"></i>
+                        </span>
+                        <span className="title">About Me</span>
+                    </NavLink>
+                </li>
+                <li className="list">
+                    <NavLink exact to={'/experience'} activeClassName="active" className="menu-item">
+                        <span className="icon">
+                            <i className="fas fa-solid fa-network-wired"></i>
+                        </span>
+                        <span className="title">Experience</span>
+                    </NavLink>
+                </li>
+                <li className="list">
+                    <NavLink exact to={'/skill'} activeClassName="active" className="menu-item">
+                        <span className="icon">
+                            <i className="fas fa-solid fa-laptop-code"></i>
+                        </span>
+                        <span className="title">Skills</span>
+                    </NavLink>
+                </li>
+                <li className="list">
+                    <NavLink exact to={'/portfolio'} activeClassName="active" className="menu-item">
+                        <span className="icon">
+                            <i className="fas fa-solid fa-briefcase"></i>
+                        </span>
+                        <span className="title">Portfolio</span>
+                    </NavLink>
+                </li>
+                <li className="list">
+                    <NavLink exact to={'/blogs'} activeClassName="active" className="menu-item">
+                        <span className="icon">
+                            <i className="fas fa-solid fa-newspaper"></i>
+                        </span>
+                        <span className="title">Blogs</span>
+                    </NavLink>
+                </li>
+                <li className="list">
+                    <NavLink exact to={'/contact'} activeClassName="active" className="menu-item">
+                        <span className="icon">
+                            <i className="fas fa-solid fa-phone"></i>
+                        </span>
+                        <span className="title">Contact</span>
+                    </NavLink>
+                </li>
+            </ul>
         </div>
     );
 }
