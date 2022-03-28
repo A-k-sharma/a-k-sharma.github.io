@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Dancing Script', cursive;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    min-height:100vh;
+    align-items:center;
+    background: #232c33;
+}
+
+.navigation{
+    position:relative;
+    background:#2b343b;
+    box-shadow: 10px 0 0 #4186f6;
+    border-left: 10px solid #2b343b;
+    transition: width .5s;
+    ul{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        padding-left:5px;
+        padding-top:40px;
+
+        li{
+            position:relative;
+            list-style:none;
+            width:100%;
+
+            a{
+                position:relative;
+                display:flex;
+                text-decoration:none;
+                width:100%;
+                color:#fff;
+                border-radius: 20px 0 0 20px;
+
+                &.active{
+                    background:#4186f6;
+
+                    a::before{
+                        content:'';
+                        position: absolute;
+                        top:-30px;
+                        right:0;
+                        width:30px;
+                        height:30px;
+                        border-radius:50%;
+                        box-shadow: 15px 15px 0px #4186f6;
+                    }
+                    a::after{
+                        content:'';
+                        position: absolute;
+                        bottom:-30px;
+                        right:0;
+                        width:30px;
+                        height:30px;
+                        border-radius:50%;
+                        box-shadow: 15px -15px 0px #4186f6;
+                    }
+
+                }
+
+                .icon{
+                    position:relative;
+                    display:block;
+                    min-width:60px;
+                    height:60px;
+                    line-height:60px;
+                    text-align:center;
+
+                    .fa-phone{
+                        transform: rotate(90deg);
+                    }
+                }
+
+                .title{
+                    position:relative;
+                    display:block;
+                    padding-left:10px;
+                    height:60px;
+                    line-height:60px;
+                    white-space:nowrap;
+                }
+            }
+        }
+    }
+}
